@@ -2,7 +2,7 @@
 	<Project sr="proj0" ve="2">
 		<cdate>1742831739518</cdate>
 		<name>(ID: IDENTIFIER) PROGRESSIONVESION (VERSION COD) WUZAPI CHATBOOT SEND MESSAGES AND FILES</name>
-		<tids>924,57,929,925,954,3,922,936,926,933,930,923,934,927,935,931,932,928</tids>
+		<tids>3,639,932,936,954,935,927,933,928,923,926,922,929,925,931,934,930,924</tids>
 		<Share sr="Share">
 			<b>false</b>
 			<d>tedte</d>
@@ -13,9 +13,9 @@
 	</Project>
 	<Task sr="task3">
 		<cdate>1742831555568</cdate>
-		<edate>1743660719691</edate>
+		<edate>1743661837963</edate>
 		<id>3</id>
-		<nme>#SEND_MESSAGES_AND_FILES (v1)</nme>
+		<nme>#SEND_MESSAGES_AND_FILES v(1.0)</nme>
 		<pri>100</pri>
 		<rty>2</rty>
 		<Action sr="act0" ve="7">
@@ -1440,7 +1440,7 @@ true</Str>
 		</Action>
 		<Action sr="act28" ve="7">
 			<code>130</code>
-			<Str sr="arg0" ve="3">#GENERATE CODES ( JAVA SCRIPT - CSS - SH ) (v1)</Str>
+			<Str sr="arg0" ve="3">#GENERATE CODES ( JAVA SCRIPT - CSS - SH ) v(1.0)</Str>
 			<Int sr="arg1">
 				<var>%priority+20</var>
 			</Int>
@@ -2494,10 +2494,10 @@ Content-Type:application/json</Str>
 			<nme>mw_content_send</nme>
 		</Img>
 	</Task>
-	<Task sr="task57">
+	<Task sr="task639">
 		<cdate>1743280624629</cdate>
-		<edate>1743660599438</edate>
-		<id>57</id>
+		<edate>1743661724241</edate>
+		<id>639</id>
 		<nme>#CHECK_VARIABLE_ERRORS v(1.0)</nme>
 		<pri>100</pri>
 		<rty>2</rty>
@@ -2613,7 +2613,7 @@ if (missingVariables.length &gt; 0) {
 		<Action sr="act104" ve="7">
 			<code>137</code>
 			<Int sr="arg0" val="0"/>
-			<Str sr="arg1" ve="3">#SEND_MESSAGES_AND_FILES (v1)</Str>
+			<Str sr="arg1" ve="3">#SEND_MESSAGES_AND_FILES v(1.0)</Str>
 		</Action>
 		<Action sr="act105" ve="7">
 			<code>43</code>
@@ -2739,7 +2739,7 @@ if (missingVariables.length &gt; 0) {
 		<Action sr="act113" ve="7">
 			<code>137</code>
 			<Int sr="arg0" val="0"/>
-			<Str sr="arg1" ve="3">#SEND_MESSAGES_AND_FILES (v1)</Str>
+			<Str sr="arg1" ve="3">#SEND_MESSAGES_AND_FILES v(1.0)</Str>
 		</Action>
 		<Action sr="act114" ve="7">
 			<code>43</code>
@@ -2854,7 +2854,7 @@ if (missingVariables.length &gt; 0) {
 		<Action sr="act122" ve="7">
 			<code>137</code>
 			<Int sr="arg0" val="0"/>
-			<Str sr="arg1" ve="3">#SEND_MESSAGES_AND_FILES (v1)</Str>
+			<Str sr="arg1" ve="3">#SEND_MESSAGES_AND_FILES v(1.0)</Str>
 		</Action>
 		<Action sr="act123" ve="7">
 			<code>43</code>
@@ -2959,7 +2959,7 @@ if (missingVariables.length &gt; 0) {
 		<Action sr="act131" ve="7">
 			<code>137</code>
 			<Int sr="arg0" val="0"/>
-			<Str sr="arg1" ve="3">#SEND_MESSAGES_AND_FILES (v1)</Str>
+			<Str sr="arg1" ve="3">#SEND_MESSAGES_AND_FILES v(1.0)</Str>
 		</Action>
 		<Action sr="act132" ve="7">
 			<code>43</code>
@@ -2981,7 +2981,7 @@ if (missingVariables.length &gt; 0) {
 		<Action sr="act14" ve="7">
 			<code>137</code>
 			<Int sr="arg0" val="0"/>
-			<Str sr="arg1" ve="3">#SEND_MESSAGES_AND_FILES (v1)</Str>
+			<Str sr="arg1" ve="3">#SEND_MESSAGES_AND_FILES v(1.0)</Str>
 		</Action>
 		<Action sr="act15" ve="7">
 			<code>43</code>
@@ -3129,7 +3129,7 @@ if (missingVariables.length &gt; 0) {
 		<Action sr="act23" ve="7">
 			<code>137</code>
 			<Int sr="arg0" val="0"/>
-			<Str sr="arg1" ve="3">#SEND_MESSAGES_AND_FILES (v1)</Str>
+			<Str sr="arg1" ve="3">#SEND_MESSAGES_AND_FILES v(1.0)</Str>
 		</Action>
 		<Action sr="act24" ve="7">
 			<code>43</code>
@@ -3244,7 +3244,7 @@ if (missingVariables.length &gt; 0) {
 		<Action sr="act32" ve="7">
 			<code>137</code>
 			<Int sr="arg0" val="0"/>
-			<Str sr="arg1" ve="3">#SEND_MESSAGES_AND_FILES (v1)</Str>
+			<Str sr="arg1" ve="3">#SEND_MESSAGES_AND_FILES v(1.0)</Str>
 		</Action>
 		<Action sr="act33" ve="7">
 			<code>43</code>
@@ -3364,7 +3364,7 @@ if (missingVariables.length &gt; 0) {
 		<Action sr="act41" ve="7">
 			<code>137</code>
 			<Int sr="arg0" val="0"/>
-			<Str sr="arg1" ve="3">#SEND_MESSAGES_AND_FILES (v1)</Str>
+			<Str sr="arg1" ve="3">#SEND_MESSAGES_AND_FILES v(1.0)</Str>
 		</Action>
 		<Action sr="act42" ve="7">
 			<code>43</code>
@@ -3469,12 +3469,12 @@ if (missingVariables.length &gt; 0) {
 		<Action sr="act5" ve="7">
 			<code>137</code>
 			<Int sr="arg0" val="0"/>
-			<Str sr="arg1" ve="3">#SEND_MESSAGES_AND_FILES (v1)</Str>
+			<Str sr="arg1" ve="3">#SEND_MESSAGES_AND_FILES v(1.0)</Str>
 		</Action>
 		<Action sr="act50" ve="7">
 			<code>137</code>
 			<Int sr="arg0" val="0"/>
-			<Str sr="arg1" ve="3">#SEND_MESSAGES_AND_FILES (v1)</Str>
+			<Str sr="arg1" ve="3">#SEND_MESSAGES_AND_FILES v(1.0)</Str>
 		</Action>
 		<Action sr="act51" ve="7">
 			<code>43</code>
@@ -3575,7 +3575,7 @@ if (missingVariables.length &gt; 0) {
 		<Action sr="act59" ve="7">
 			<code>137</code>
 			<Int sr="arg0" val="0"/>
-			<Str sr="arg1" ve="3">#SEND_MESSAGES_AND_FILES (v1)</Str>
+			<Str sr="arg1" ve="3">#SEND_MESSAGES_AND_FILES v(1.0)</Str>
 		</Action>
 		<Action sr="act6" ve="7">
 			<code>43</code>
@@ -3683,7 +3683,7 @@ if (missingVariables.length &gt; 0) {
 		<Action sr="act68" ve="7">
 			<code>137</code>
 			<Int sr="arg0" val="0"/>
-			<Str sr="arg1" ve="3">#SEND_MESSAGES_AND_FILES (v1)</Str>
+			<Str sr="arg1" ve="3">#SEND_MESSAGES_AND_FILES v(1.0)</Str>
 		</Action>
 		<Action sr="act69" ve="7">
 			<code>43</code>
@@ -3804,7 +3804,7 @@ if (missingVariables.length &gt; 0) {
 		<Action sr="act77" ve="7">
 			<code>137</code>
 			<Int sr="arg0" val="0"/>
-			<Str sr="arg1" ve="3">#SEND_MESSAGES_AND_FILES (v1)</Str>
+			<Str sr="arg1" ve="3">#SEND_MESSAGES_AND_FILES v(1.0)</Str>
 		</Action>
 		<Action sr="act78" ve="7">
 			<code>43</code>
@@ -3908,7 +3908,7 @@ if (missingVariables.length &gt; 0) {
 		<Action sr="act86" ve="7">
 			<code>137</code>
 			<Int sr="arg0" val="0"/>
-			<Str sr="arg1" ve="3">#SEND_MESSAGES_AND_FILES (v1)</Str>
+			<Str sr="arg1" ve="3">#SEND_MESSAGES_AND_FILES v(1.0)</Str>
 		</Action>
 		<Action sr="act87" ve="7">
 			<code>43</code>
@@ -4008,7 +4008,7 @@ if (missingVariables.length &gt; 0) {
 		<Action sr="act95" ve="7">
 			<code>137</code>
 			<Int sr="arg0" val="0"/>
-			<Str sr="arg1" ve="3">#SEND_MESSAGES_AND_FILES (v1)</Str>
+			<Str sr="arg1" ve="3">#SEND_MESSAGES_AND_FILES v(1.0)</Str>
 		</Action>
 		<Action sr="act96" ve="7">
 			<code>43</code>
@@ -4028,12 +4028,12 @@ if (missingVariables.length &gt; 0) {
 			<code>38</code>
 		</Action>
 		<Img sr="icn" ve="2">
-			<nme>mw_editor_format_line_spacing</nme>
+			<nme>mw_action_cached</nme>
 		</Img>
 	</Task>
 	<Task sr="task922">
 		<cdate>1742837467342</cdate>
-		<edate>1743660502728</edate>
+		<edate>1743661655727</edate>
 		<id>922</id>
 		<nme>(ID: DOOR IDENTIFIER) PROGRESSION VESION (VERSION COD) -Wuzapi ChatBoot - Send Image</nme>
 		<pri>100</pri>
@@ -4108,7 +4108,7 @@ image caption</label>
 		</Action>
 		<Action sr="act5" ve="7">
 			<code>130</code>
-			<Str sr="arg0" ve="3">#SEND_MESSAGES_AND_FILES (v1)</Str>
+			<Str sr="arg0" ve="3">#SEND_MESSAGES_AND_FILES v(1.0)</Str>
 			<Int sr="arg1">
 				<var>%priority+10</var>
 			</Int>
@@ -4248,7 +4248,7 @@ message to be sent</label>
 		</Action>
 		<Action sr="act4" ve="7">
 			<code>130</code>
-			<Str sr="arg0" ve="3">#SEND_MESSAGES_AND_FILES (v1)</Str>
+			<Str sr="arg0" ve="3">#SEND_MESSAGES_AND_FILES v(1.0)</Str>
 			<Int sr="arg1">
 				<var>%priority+10</var>
 			</Int>
@@ -4335,7 +4335,7 @@ message to be sent</label>
 	</Task>
 	<Task sr="task924">
 		<cdate>1742837467342</cdate>
-		<edate>1743542991692</edate>
+		<edate>1743660956236</edate>
 		<id>924</id>
 		<nme>(ID: DOOR IDENTIFIER) PROGRESSION VESION (VERSION COD) -Wuzapi ChatBoot - Send mark as Read Message</nme>
 		<pri>100</pri>
@@ -4391,7 +4391,7 @@ ID of the message you want to mark as "read"</label>
 		</Action>
 		<Action sr="act4" ve="7">
 			<code>130</code>
-			<Str sr="arg0" ve="3">#SEND_MESSAGES_AND_FILES (v1)</Str>
+			<Str sr="arg0" ve="3">#SEND_MESSAGES_AND_FILES v(1.0)</Str>
 			<Int sr="arg1">
 				<var>%priority+10</var>
 			</Int>
@@ -4550,7 +4550,7 @@ message to be replied to the recipient</label>
 		</Action>
 		<Action sr="act5" ve="7">
 			<code>130</code>
-			<Str sr="arg0" ve="3">#SEND_MESSAGES_AND_FILES (v1)</Str>
+			<Str sr="arg0" ve="3">#SEND_MESSAGES_AND_FILES v(1.0)</Str>
 			<Int sr="arg1">
 				<var>%priority+10</var>
 			</Int>
@@ -4711,7 +4711,7 @@ choose not to add a caption the file will be sent with a random numeric caption 
 		</Action>
 		<Action sr="act5" ve="7">
 			<code>130</code>
-			<Str sr="arg0" ve="3">#SEND_MESSAGES_AND_FILES (v1)</Str>
+			<Str sr="arg0" ve="3">#SEND_MESSAGES_AND_FILES v(1.0)</Str>
 			<Int sr="arg1">
 				<var>%priority+10</var>
 			</Int>
@@ -4971,7 +4971,7 @@ choose not to add a caption to the location, a caption with the latitude and lon
 		</Action>
 		<Action sr="act7" ve="7">
 			<code>130</code>
-			<Str sr="arg0" ve="3">#SEND_MESSAGES_AND_FILES (v1)</Str>
+			<Str sr="arg0" ve="3">#SEND_MESSAGES_AND_FILES v(1.0)</Str>
 			<Int sr="arg1">
 				<var>%priority+10</var>
 			</Int>
@@ -5086,7 +5086,7 @@ writing, value ( typing )
 		</Action>
 		<Action sr="act4" ve="7">
 			<code>130</code>
-			<Str sr="arg0" ve="3">#SEND_MESSAGES_AND_FILES (v1)</Str>
+			<Str sr="arg0" ve="3">#SEND_MESSAGES_AND_FILES v(1.0)</Str>
 			<Int sr="arg1">
 				<var>%priority+10</var>
 			</Int>
@@ -5215,7 +5215,7 @@ door to which it will be passed</label>
 		</Action>
 		<Action sr="act3" ve="7">
 			<code>130</code>
-			<Str sr="arg0" ve="3">#SEND_MESSAGES_AND_FILES (v1)</Str>
+			<Str sr="arg0" ve="3">#SEND_MESSAGES_AND_FILES v(1.0)</Str>
 			<Int sr="arg1">
 				<var>%priority+10</var>
 			</Int>
@@ -5366,7 +5366,7 @@ Enter the phone number you want to check if it is linked to WhatsApp ex:. 558122
 		</Action>
 		<Action sr="act3" ve="7">
 			<code>130</code>
-			<Str sr="arg0" ve="3">#SEND_MESSAGES_AND_FILES (v1)</Str>
+			<Str sr="arg0" ve="3">#SEND_MESSAGES_AND_FILES v(1.0)</Str>
 			<Int sr="arg1">
 				<var>%priority+10</var>
 			</Int>
@@ -5550,7 +5550,7 @@ ex:. 😀</label>
 		</Action>
 		<Action sr="act5" ve="7">
 			<code>130</code>
-			<Str sr="arg0" ve="3">#SEND_MESSAGES_AND_FILES (v1)</Str>
+			<Str sr="arg0" ve="3">#SEND_MESSAGES_AND_FILES v(1.0)</Str>
 			<Int sr="arg1">
 				<var>%priority+10</var>
 			</Int>
@@ -5710,7 +5710,7 @@ exe:. /storage/emulated/0/Download/audio.mp3</label>
 		</Action>
 		<Action sr="act5" ve="7">
 			<code>130</code>
-			<Str sr="arg0" ve="3">#SEND_MESSAGES_AND_FILES (v1)</Str>
+			<Str sr="arg0" ve="3">#SEND_MESSAGES_AND_FILES v(1.0)</Str>
 			<Int sr="arg1">
 				<var>%priority+10</var>
 			</Int>
@@ -5839,7 +5839,7 @@ ex:. 558122334455</label>
 		</Action>
 		<Action sr="act3" ve="7">
 			<code>130</code>
-			<Str sr="arg0" ve="3">#SEND_MESSAGES_AND_FILES (v1)</Str>
+			<Str sr="arg0" ve="3">#SEND_MESSAGES_AND_FILES v(1.0)</Str>
 			<Int sr="arg1">
 				<var>%priority+10</var>
 			</Int>
@@ -6023,7 +6023,7 @@ video caption</label>
 		</Action>
 		<Action sr="act5" ve="7">
 			<code>130</code>
-			<Str sr="arg0" ve="3">#SEND_MESSAGES_AND_FILES (v1)</Str>
+			<Str sr="arg0" ve="3">#SEND_MESSAGES_AND_FILES v(1.0)</Str>
 			<Int sr="arg1">
 				<var>%priority+10</var>
 			</Int>
@@ -6281,7 +6281,7 @@ Leave disabled if you don't want to add a message to the link
 		</Action>
 		<Action sr="act8" ve="7">
 			<code>130</code>
-			<Str sr="arg0" ve="3">#SEND_MESSAGES_AND_FILES (v1)</Str>
+			<Str sr="arg0" ve="3">#SEND_MESSAGES_AND_FILES v(1.0)</Str>
 			<Int sr="arg1">
 				<var>%priority+10</var>
 			</Int>
@@ -6345,7 +6345,7 @@ door to which it will be passed</label>
 		</Action>
 		<Action sr="act3" ve="7">
 			<code>130</code>
-			<Str sr="arg0" ve="3">#SEND_MESSAGES_AND_FILES (v1)</Str>
+			<Str sr="arg0" ve="3">#SEND_MESSAGES_AND_FILES v(1.0)</Str>
 			<Int sr="arg1">
 				<var>%priority+10</var>
 			</Int>
@@ -6452,9 +6452,9 @@ The label of the button that was clicked&lt;/_array_net.dinglisch.android.tasker
 	</Task>
 	<Task sr="task954">
 		<cdate>1731963712394</cdate>
-		<edate>1743510167549</edate>
+		<edate>1743661810814</edate>
 		<id>954</id>
-		<nme>#GENERATE CODES ( JAVA SCRIPT - CSS - SH ) (v1)</nme>
+		<nme>#GENERATE CODES ( JAVA SCRIPT - CSS - SH ) v(1.0)</nme>
 		<pri>100</pri>
 		<rty>2</rty>
 		<Action sr="act0" ve="7">
