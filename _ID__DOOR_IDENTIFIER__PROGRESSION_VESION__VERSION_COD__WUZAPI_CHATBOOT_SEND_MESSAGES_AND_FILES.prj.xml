@@ -1,8 +1,8 @@
 <TaskerData sr="" dvi="1" tv="6.4.16">
 	<Project sr="proj0" ve="2">
 		<cdate>1742831739518</cdate>
-		<name>(ID: IDENTIFIER) PROGRESSIONVESION (VERSION COD) WUZAPI CHATBOOT SEND MESSAGES AND FILES</name>
-		<tids>3,639,932,936,954,935,927,933,928,923,926,922,929,925,931,934,930,924</tids>
+		<name>(ID: DOOR IDENTIFIER) PROGRESSIONVESION (VERSION COD) WUZAPI CHATBOOT SEND MESSAGES AND FILES</name>
+		<tids>954,3,639,928,933,923,925,935,931,932,930,927,924,926,934,936,929,922</tids>
 		<Share sr="Share">
 			<b>false</b>
 			<d>tedte</d>
@@ -4335,7 +4335,7 @@ message to be sent</label>
 	</Task>
 	<Task sr="task924">
 		<cdate>1742837467342</cdate>
-		<edate>1743660956236</edate>
+		<edate>1743663497403</edate>
 		<id>924</id>
 		<nme>(ID: DOOR IDENTIFIER) PROGRESSION VESION (VERSION COD) -Wuzapi ChatBoot - Send mark as Read Message</nme>
 		<pri>100</pri>
@@ -4478,7 +4478,7 @@ ID of the message you want to mark as "read"</label>
 	</Task>
 	<Task sr="task925">
 		<cdate>1742837467342</cdate>
-		<edate>1743482459841</edate>
+		<edate>1743663541336</edate>
 		<id>925</id>
 		<nme>(ID: DOOR IDENTIFIER) PROGRESSION VESION (VERSION COD) -Wuzapi ChatBoot - Response Text Message</nme>
 		<pri>100</pri>
@@ -5025,7 +5025,7 @@ choose not to add a caption to the location, a caption with the latitude and lon
 	</Task>
 	<Task sr="task928">
 		<cdate>1742837467342</cdate>
-		<edate>1743482485365</edate>
+		<edate>1743664599113</edate>
 		<id>928</id>
 		<nme>(ID: DOOR IDENTIFIER) PROGRESSION VESION (VERSION COD) -Wuzapi ChatBoot - Presence Indication</nme>
 		<pri>100</pri>
@@ -5173,7 +5173,7 @@ writing, value ( typing )
 	</Task>
 	<Task sr="task929">
 		<cdate>1743391639738</cdate>
-		<edate>1743660105037</edate>
+		<edate>1743663215341</edate>
 		<id>929</id>
 		<nme>(ID: DOOR IDENTIFIER) PROGRESSION VESION (VERSION COD) -Wuzapi ChatBoot - Send Get Contacts Message</nme>
 		<pri>100</pri>
@@ -5472,7 +5472,7 @@ Enter the phone number you want to check if it is linked to WhatsApp ex:. 558122
 	</Task>
 	<Task sr="task931">
 		<cdate>1743391639738</cdate>
-		<edate>1743539859306</edate>
+		<edate>1743663185169</edate>
 		<id>931</id>
 		<nme>(ID: DOOR IDENTIFIER) PROGRESSION VESION (VERSION COD) -Wuzapi ChatBoot - Send React to Messages  Message</nme>
 		<pri>100</pri>
