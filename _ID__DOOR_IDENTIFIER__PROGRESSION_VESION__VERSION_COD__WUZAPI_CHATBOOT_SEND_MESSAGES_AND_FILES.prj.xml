@@ -2,7 +2,7 @@
 	<Project sr="proj0" ve="2">
 		<cdate>1742831739518</cdate>
 		<name>(ID: DOOR IDENTIFIER) PROGRESSIONVESION (VERSION COD) WUZAPI CHATBOOT SEND MESSAGES AND FILES</name>
-		<tids>954,3,639,928,933,923,925,935,931,932,930,927,924,926,934,936,929,922</tids>
+		<tids>3,954,639,925,934,929,926,931,922,933,927,928,936,932,923,930,935,924</tids>
 		<Share sr="Share">
 			<b>false</b>
 			<d>tedte</d>
@@ -13,7 +13,7 @@
 	</Project>
 	<Task sr="task3">
 		<cdate>1742831555568</cdate>
-		<edate>1743661837963</edate>
+		<edate>1743743690500</edate>
 		<id>3</id>
 		<nme>#SEND_MESSAGES_AND_FILES v(1.0)</nme>
 		<pri>100</pri>
@@ -729,7 +729,7 @@ setLocal("inf_users", formattedJSON);</Str>
 		</Action>
 		<Action sr="act145" ve="7">
 			<code>37</code>
-			<coll>true</coll>
+			<coll>false</coll>
 			<ConditionList sr="if">
 				<Condition sr="c0" ve="3">
 					<lhs>%type</lhs>
@@ -782,7 +782,7 @@ The size of the response in bytes&lt;/_array_net.dinglisch.android.tasker.RELEVA
 			<Str sr="arg3" ve="3">Token: %port
 Content-Type:application/json</Str>
 			<Str sr="arg4" ve="3"/>
-			<Str sr="arg5" ve="3">{"Phone":"%phone","Preview":true}</Str>
+			<Str sr="arg5" ve="3">{"Phone":"%number","Preview":true}</Str>
 			<Str sr="arg6" ve="3"/>
 			<Str sr="arg7" ve="3"/>
 			<Int sr="arg8" val="30"/>
@@ -2496,7 +2496,7 @@ Content-Type:application/json</Str>
 	</Task>
 	<Task sr="task639">
 		<cdate>1743280624629</cdate>
-		<edate>1743661724241</edate>
+		<edate>1743743786705</edate>
 		<id>639</id>
 		<nme>#CHECK_VARIABLE_ERRORS v(1.0)</nme>
 		<pri>100</pri>
@@ -2549,7 +2549,7 @@ Content-Type:application/json</Str>
 		<Action sr="act101" ve="7">
 			<code>129</code>
 			<Str sr="arg0" ve="3">var port = local('port');
-var phone = local('phone');
+var phone = local('number');
 
 var missingVariables = [];
 
@@ -2557,7 +2557,7 @@ if (!port) {
     missingVariables.push("| %port |");
 }
 if (!phone) {
-    missingVariables.push("| %phone |");
+    missingVariables.push("| %number |");
 }
 
 if (missingVariables.length &gt; 0) {
@@ -4033,7 +4033,7 @@ if (missingVariables.length &gt; 0) {
 	</Task>
 	<Task sr="task922">
 		<cdate>1742837467342</cdate>
-		<edate>1743661655727</edate>
+		<edate>1743743138304</edate>
 		<id>922</id>
 		<nme>(ID: DOOR IDENTIFIER) PROGRESSION VESION (VERSION COD) -Wuzapi ChatBoot - Send Image</nme>
 		<pri>100</pri>
@@ -4062,107 +4062,6 @@ door to which it will be passed</label>
 			<Int sr="arg6" val="1"/>
 		</Action>
 		<Action sr="act10" ve="7">
-			<code>38</code>
-		</Action>
-		<Action sr="act2" ve="7">
-			<code>547</code>
-			<label>número do destinatário
-
-recipient number</label>
-			<Str sr="arg0" ve="3">%number</Str>
-			<Str sr="arg1" ve="3">558122334455</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<Int sr="arg6" val="1"/>
-		</Action>
-		<Action sr="act3" ve="7">
-			<code>547</code>
-			<label>caminho da imagem
-exemplo : /storage/emulated/0/Download/imagem.png
-
-A imagem deve estar em png ou jpeg
-
-image path example: /storage/emulated/0/Download/image.png The image must be in png or jpeg format</label>
-			<Str sr="arg0" ve="3">%path</Str>
-			<Str sr="arg1" ve="3">/storage/emulated/0/Download/images.jpeg</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<Int sr="arg6" val="1"/>
-		</Action>
-		<Action sr="act4" ve="7">
-			<code>547</code>
-			<label>legenda da imagem
-
-image caption</label>
-			<Str sr="arg0" ve="3">%caption</Str>
-			<Str sr="arg1" ve="3">Olá! Esta imagem foi enviada do Tasker !!!</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<Int sr="arg6" val="1"/>
-		</Action>
-		<Action sr="act5" ve="7">
-			<code>130</code>
-			<Str sr="arg0" ve="3">#SEND_MESSAGES_AND_FILES v(1.0)</Str>
-			<Int sr="arg1">
-				<var>%priority+10</var>
-			</Int>
-			<Int sr="arg10" val="1"/>
-			<Str sr="arg2" ve="3"/>
-			<Str sr="arg3" ve="3"/>
-			<Str sr="arg4" ve="3">%result</Str>
-			<Int sr="arg5" val="0"/>
-			<Int sr="arg6" val="1"/>
-			<Str sr="arg7" ve="3">%type/%port/%number/%caption/%path</Str>
-			<Int sr="arg8" val="0"/>
-			<Int sr="arg9" val="1"/>
-		</Action>
-		<Action sr="act6" ve="7">
-			<code>37</code>
-			<ConditionList sr="if">
-				<Condition sr="c0" ve="3">
-					<lhs>%result</lhs>
-					<op>2</op>
-					<rhs>success</rhs>
-				</Condition>
-			</ConditionList>
-		</Action>
-		<Action sr="act7" ve="7">
-			<code>548</code>
-			<se>false</se>
-			<Str sr="arg0" ve="3">Sucesso</Str>
-			<Int sr="arg1" val="0"/>
-			<Str sr="arg10" ve="3"/>
-			<Int sr="arg11" val="1"/>
-			<Int sr="arg12" val="0"/>
-			<Str sr="arg13" ve="3"/>
-			<Int sr="arg14" val="0"/>
-			<Str sr="arg15" ve="3"/>
-			<Int sr="arg2" val="0"/>
-			<Str sr="arg3" ve="3"/>
-			<Str sr="arg4" ve="3"/>
-			<Str sr="arg5" ve="3"/>
-			<Str sr="arg6" ve="3"/>
-			<Str sr="arg7" ve="3"/>
-			<Str sr="arg8" ve="3"/>
-			<Int sr="arg9" val="1"/>
-			<ConditionList sr="if">
-				<Condition sr="c0" ve="3">
-					<lhs>%caller1</lhs>
-					<op>2</op>
-					<rhs>ui</rhs>
-				</Condition>
-			</ConditionList>
-		</Action>
-		<Action sr="act8" ve="7">
-			<code>43</code>
-		</Action>
-		<Action sr="act9" ve="7">
 			<code>548</code>
 			<se>false</se>
 			<Str sr="arg0" ve="3">Processo Falhou</Str>
@@ -4189,10 +4088,118 @@ image caption</label>
 				</Condition>
 			</ConditionList>
 		</Action>
+		<Action sr="act11" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act12" ve="7">
+			<code>40</code>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>354</code>
+			<label>números destinatários, adicionar sempre cada número com uma quebra de linha se for para mais de um número
+
+recipient numbers, always add each number with a line break if it is for more than one number</label>
+			<Str sr="arg0" ve="3">%multiples</Str>
+			<Str sr="arg1" ve="3">558122334455
+558188776655</Str>
+			<Str sr="arg2" ve="3">
+</Str>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>39</code>
+			<Str sr="arg0" ve="3">%number</Str>
+			<Str sr="arg1" ve="3">%multiples()</Str>
+			<Int sr="arg2" val="1"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>547</code>
+			<label>caminho da imagem
+exemplo : /storage/emulated/0/Download/imagem.png
+
+A imagem deve estar em png ou jpeg
+
+image path example: /storage/emulated/0/Download/image.png The image must be in png or jpeg format</label>
+			<Str sr="arg0" ve="3">%path</Str>
+			<Str sr="arg1" ve="3">/storage/emulated/0/Download/images.jpeg</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>547</code>
+			<label>legenda da imagem
+
+image caption</label>
+			<Str sr="arg0" ve="3">%caption</Str>
+			<Str sr="arg1" ve="3">Olá! Esta imagem foi enviada do Tasker !!!</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">#SEND_MESSAGES_AND_FILES v(1.0)</Str>
+			<Int sr="arg1">
+				<var>%priority+10</var>
+			</Int>
+			<Int sr="arg10" val="1"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3">%result</Str>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="1"/>
+			<Str sr="arg7" ve="3">%type/%port/%number/%caption/%path</Str>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>37</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%result</lhs>
+					<op>2</op>
+					<rhs>success</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>548</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">Sucesso</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg10" ve="3"/>
+			<Int sr="arg11" val="1"/>
+			<Int sr="arg12" val="0"/>
+			<Str sr="arg13" ve="3"/>
+			<Int sr="arg14" val="0"/>
+			<Str sr="arg15" ve="3"/>
+			<Int sr="arg2" val="0"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Int sr="arg9" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%caller1</lhs>
+					<op>2</op>
+					<rhs>ui</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act9" ve="7">
+			<code>43</code>
+		</Action>
 	</Task>
 	<Task sr="task923">
 		<cdate>1742837467342</cdate>
-		<edate>1743660336825</edate>
+		<edate>1743743597754</edate>
 		<id>923</id>
 		<nme>(ID: DOOR IDENTIFIER) PROGRESSION VESION (VERSION COD) -Wuzapi ChatBoot - Send Text</nme>
 		<pri>100</pri>
@@ -4220,20 +4227,30 @@ door to which it will be passed</label>
 			<Int sr="arg5" val="3"/>
 			<Int sr="arg6" val="1"/>
 		</Action>
+		<Action sr="act10" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act11" ve="7">
+			<code>40</code>
+		</Action>
 		<Action sr="act2" ve="7">
-			<code>547</code>
-			<label>número do destinatário
+			<code>354</code>
+			<label>números destinatários, adicionar sempre cada número com uma quebra de linha se for para mais de um número
 
-recipient number</label>
-			<Str sr="arg0" ve="3">%number</Str>
-			<Str sr="arg1" ve="3">558122334455</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<Int sr="arg6" val="1"/>
+recipient numbers, always add each number with a line break if it is for more than one number</label>
+			<Str sr="arg0" ve="3">%multiples</Str>
+			<Str sr="arg1" ve="3">558122334455
+558188776655</Str>
+			<Str sr="arg2" ve="3">
+</Str>
 		</Action>
 		<Action sr="act3" ve="7">
+			<code>39</code>
+			<Str sr="arg0" ve="3">%number</Str>
+			<Str sr="arg1" ve="3">%multiples()</Str>
+			<Int sr="arg2" val="1"/>
+		</Action>
+		<Action sr="act4" ve="7">
 			<code>547</code>
 			<label>mensagem a ser enviada
 
@@ -4246,7 +4263,7 @@ message to be sent</label>
 			<Int sr="arg5" val="3"/>
 			<Int sr="arg6" val="1"/>
 		</Action>
-		<Action sr="act4" ve="7">
+		<Action sr="act5" ve="7">
 			<code>130</code>
 			<Str sr="arg0" ve="3">#SEND_MESSAGES_AND_FILES v(1.0)</Str>
 			<Int sr="arg1">
@@ -4262,7 +4279,7 @@ message to be sent</label>
 			<Int sr="arg8" val="0"/>
 			<Int sr="arg9" val="1"/>
 		</Action>
-		<Action sr="act5" ve="7">
+		<Action sr="act6" ve="7">
 			<code>37</code>
 			<ConditionList sr="if">
 				<Condition sr="c0" ve="3">
@@ -4272,7 +4289,7 @@ message to be sent</label>
 				</Condition>
 			</ConditionList>
 		</Action>
-		<Action sr="act6" ve="7">
+		<Action sr="act7" ve="7">
 			<code>548</code>
 			<se>false</se>
 			<Str sr="arg0" ve="3">Sucesso</Str>
@@ -4299,10 +4316,10 @@ message to be sent</label>
 				</Condition>
 			</ConditionList>
 		</Action>
-		<Action sr="act7" ve="7">
+		<Action sr="act8" ve="7">
 			<code>43</code>
 		</Action>
-		<Action sr="act8" ve="7">
+		<Action sr="act9" ve="7">
 			<code>548</code>
 			<se>false</se>
 			<Str sr="arg0" ve="3">Processo Falhou</Str>
@@ -4329,13 +4346,10 @@ message to be sent</label>
 				</Condition>
 			</ConditionList>
 		</Action>
-		<Action sr="act9" ve="7">
-			<code>38</code>
-		</Action>
 	</Task>
 	<Task sr="task924">
 		<cdate>1742837467342</cdate>
-		<edate>1743663497403</edate>
+		<edate>1743743953162</edate>
 		<id>924</id>
 		<nme>(ID: DOOR IDENTIFIER) PROGRESSION VESION (VERSION COD) -Wuzapi ChatBoot - Send mark as Read Message</nme>
 		<pri>100</pri>
@@ -4478,7 +4492,7 @@ ID of the message you want to mark as "read"</label>
 	</Task>
 	<Task sr="task925">
 		<cdate>1742837467342</cdate>
-		<edate>1743663541336</edate>
+		<edate>1743743509905</edate>
 		<id>925</id>
 		<nme>(ID: DOOR IDENTIFIER) PROGRESSION VESION (VERSION COD) -Wuzapi ChatBoot - Response Text Message</nme>
 		<pri>100</pri>
@@ -4634,7 +4648,7 @@ message to be replied to the recipient</label>
 	</Task>
 	<Task sr="task926">
 		<cdate>1742837467342</cdate>
-		<edate>1743539830644</edate>
+		<edate>1743744046048</edate>
 		<id>926</id>
 		<nme>(ID: DOOR IDENTIFIER) PROGRESSION VESION (VERSION COD) -Wuzapi ChatBoot - Send Document Message</nme>
 		<pri>100</pri>
@@ -4663,109 +4677,6 @@ door to which it will be passed</label>
 			<Int sr="arg6" val="1"/>
 		</Action>
 		<Action sr="act10" ve="7">
-			<code>38</code>
-		</Action>
-		<Action sr="act2" ve="7">
-			<code>547</code>
-			<label>número do destinatário
-
-recipient number</label>
-			<Str sr="arg0" ve="3">%number</Str>
-			<Str sr="arg1" ve="3">558122334455</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<Int sr="arg6" val="1"/>
-		</Action>
-		<Action sr="act3" ve="7">
-			<code>547</code>
-			<label>caminho do arquivo
-
-file path</label>
-			<Str sr="arg0" ve="3">%path</Str>
-			<Str sr="arg1" ve="3">/storage/emulated/0/Download/30150625-criacao-de-pdf-a.pdf</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<Int sr="arg6" val="1"/>
-		</Action>
-		<Action sr="act4" ve="7">
-			<code>547</code>
-			<label>legenda do arquivo
-
-mantenha desativado caso não queira enviar o arquivo como uma legenda
-
-optar por não adicionar uma legenda o arquivo será Sucesso com uma legenda numérica aleatória seguida da data e hora atual do momento do envio
-
-file caption keep disabled if you do not want to send the file with a caption
-choose not to add a caption the file will be sent with a random numeric caption followed by the current date and time of the moment of sending</label>
-			<Str sr="arg0" ve="3">%caption</Str>
-			<Str sr="arg1" ve="3">Olá! Este documento foi Sucesso do Tasker !!!</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<Int sr="arg6" val="1"/>
-		</Action>
-		<Action sr="act5" ve="7">
-			<code>130</code>
-			<Str sr="arg0" ve="3">#SEND_MESSAGES_AND_FILES v(1.0)</Str>
-			<Int sr="arg1">
-				<var>%priority+10</var>
-			</Int>
-			<Int sr="arg10" val="1"/>
-			<Str sr="arg2" ve="3"/>
-			<Str sr="arg3" ve="3"/>
-			<Str sr="arg4" ve="3">%result</Str>
-			<Int sr="arg5" val="0"/>
-			<Int sr="arg6" val="1"/>
-			<Str sr="arg7" ve="3">%type/%port/%number/%path/%caption</Str>
-			<Int sr="arg8" val="0"/>
-			<Int sr="arg9" val="1"/>
-		</Action>
-		<Action sr="act6" ve="7">
-			<code>37</code>
-			<ConditionList sr="if">
-				<Condition sr="c0" ve="3">
-					<lhs>%result</lhs>
-					<op>2</op>
-					<rhs>success</rhs>
-				</Condition>
-			</ConditionList>
-		</Action>
-		<Action sr="act7" ve="7">
-			<code>548</code>
-			<se>false</se>
-			<Str sr="arg0" ve="3">Sucesso</Str>
-			<Int sr="arg1" val="0"/>
-			<Str sr="arg10" ve="3"/>
-			<Int sr="arg11" val="1"/>
-			<Int sr="arg12" val="0"/>
-			<Str sr="arg13" ve="3"/>
-			<Int sr="arg14" val="0"/>
-			<Str sr="arg15" ve="3"/>
-			<Int sr="arg2" val="0"/>
-			<Str sr="arg3" ve="3"/>
-			<Str sr="arg4" ve="3"/>
-			<Str sr="arg5" ve="3"/>
-			<Str sr="arg6" ve="3"/>
-			<Str sr="arg7" ve="3"/>
-			<Str sr="arg8" ve="3"/>
-			<Int sr="arg9" val="1"/>
-			<ConditionList sr="if">
-				<Condition sr="c0" ve="3">
-					<lhs>%caller1</lhs>
-					<op>2</op>
-					<rhs>ui</rhs>
-				</Condition>
-			</ConditionList>
-		</Action>
-		<Action sr="act8" ve="7">
-			<code>43</code>
-		</Action>
-		<Action sr="act9" ve="7">
 			<code>548</code>
 			<se>false</se>
 			<Str sr="arg0" ve="3">Processo Falhou</Str>
@@ -4792,10 +4703,120 @@ choose not to add a caption the file will be sent with a random numeric caption 
 				</Condition>
 			</ConditionList>
 		</Action>
+		<Action sr="act11" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act12" ve="7">
+			<code>40</code>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>354</code>
+			<label>números destinatários, adicionar sempre cada número com uma quebra de linha se for para mais de um número
+
+recipient numbers, always add each number with a line break if it is for more than one number</label>
+			<Str sr="arg0" ve="3">%multiples</Str>
+			<Str sr="arg1" ve="3">558122334455
+558188776655</Str>
+			<Str sr="arg2" ve="3">
+</Str>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>39</code>
+			<Str sr="arg0" ve="3">%number</Str>
+			<Str sr="arg1" ve="3">%multiples()</Str>
+			<Int sr="arg2" val="1"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>547</code>
+			<label>caminho do arquivo
+
+file path</label>
+			<Str sr="arg0" ve="3">%path</Str>
+			<Str sr="arg1" ve="3">/storage/emulated/0/Download/30150625-criacao-de-pdf-a.pdf</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>547</code>
+			<label>legenda do arquivo
+
+mantenha desativado caso não queira enviar o arquivo como uma legenda
+
+optar por não adicionar uma legenda o arquivo será Sucesso com uma legenda numérica aleatória seguida da data e hora atual do momento do envio
+
+file caption keep disabled if you do not want to send the file with a caption
+choose not to add a caption the file will be sent with a random numeric caption followed by the current date and time of the moment of sending</label>
+			<Str sr="arg0" ve="3">%caption</Str>
+			<Str sr="arg1" ve="3">Olá! Este documento foi Sucesso do Tasker !!!</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">#SEND_MESSAGES_AND_FILES v(1.0)</Str>
+			<Int sr="arg1">
+				<var>%priority+10</var>
+			</Int>
+			<Int sr="arg10" val="1"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3">%result</Str>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="1"/>
+			<Str sr="arg7" ve="3">%type/%port/%number/%path/%caption</Str>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>37</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%result</lhs>
+					<op>2</op>
+					<rhs>success</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>548</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">Sucesso</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg10" ve="3"/>
+			<Int sr="arg11" val="1"/>
+			<Int sr="arg12" val="0"/>
+			<Str sr="arg13" ve="3"/>
+			<Int sr="arg14" val="0"/>
+			<Str sr="arg15" ve="3"/>
+			<Int sr="arg2" val="0"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Int sr="arg9" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%caller1</lhs>
+					<op>2</op>
+					<rhs>ui</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act9" ve="7">
+			<code>43</code>
+		</Action>
 	</Task>
 	<Task sr="task927">
 		<cdate>1742837467342</cdate>
-		<edate>1743539845754</edate>
+		<edate>1743744033519</edate>
 		<id>927</id>
 		<nme>(ID: DOOR IDENTIFIER) PROGRESSION VESION (VERSION COD) -Wuzapi ChatBoot - Send Location Message</nme>
 		<pri>100</pri>
@@ -4824,9 +4845,36 @@ door to which it will be passed</label>
 			<Int sr="arg6" val="1"/>
 		</Action>
 		<Action sr="act10" ve="7">
-			<code>43</code>
+			<code>548</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">Sucesso</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg10" ve="3"/>
+			<Int sr="arg11" val="1"/>
+			<Int sr="arg12" val="0"/>
+			<Str sr="arg13" ve="3"/>
+			<Int sr="arg14" val="0"/>
+			<Str sr="arg15" ve="3"/>
+			<Int sr="arg2" val="0"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Int sr="arg9" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%caller1</lhs>
+					<op>2</op>
+					<rhs>ui</rhs>
+				</Condition>
+			</ConditionList>
 		</Action>
 		<Action sr="act11" ve="7">
+			<code>43</code>
+		</Action>
+		<Action sr="act12" ve="7">
 			<code>548</code>
 			<se>false</se>
 			<Str sr="arg0" ve="3">Processo Falhou</Str>
@@ -4853,23 +4901,30 @@ door to which it will be passed</label>
 				</Condition>
 			</ConditionList>
 		</Action>
-		<Action sr="act12" ve="7">
+		<Action sr="act13" ve="7">
 			<code>38</code>
 		</Action>
+		<Action sr="act14" ve="7">
+			<code>40</code>
+		</Action>
 		<Action sr="act2" ve="7">
-			<code>547</code>
-			<label>número do destinatário
+			<code>354</code>
+			<label>números destinatários, adicionar sempre cada número com uma quebra de linha se for para mais de um número
 
-recipient number</label>
-			<Str sr="arg0" ve="3">%number</Str>
-			<Str sr="arg1" ve="3">558122334455</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<Int sr="arg6" val="1"/>
+recipient numbers, always add each number with a line break if it is for more than one number</label>
+			<Str sr="arg0" ve="3">%multiples</Str>
+			<Str sr="arg1" ve="3">558122334455
+558188776655</Str>
+			<Str sr="arg2" ve="3">
+</Str>
 		</Action>
 		<Action sr="act3" ve="7">
+			<code>39</code>
+			<Str sr="arg0" ve="3">%number</Str>
+			<Str sr="arg1" ve="3">%multiples()</Str>
+			<Int sr="arg2" val="1"/>
+		</Action>
+		<Action sr="act4" ve="7">
 			<code>366</code>
 			<Bundle sr="arg0">
 				<Vals sr="val">
@@ -4923,7 +4978,7 @@ In meters per second&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1
 			<Str sr="arg8" ve="3"/>
 			<Int sr="arg9" val="0"/>
 		</Action>
-		<Action sr="act4" ve="7">
+		<Action sr="act5" ve="7">
 			<code>547</code>
 			<label>latitude do local
 
@@ -4936,7 +4991,7 @@ latitude of location</label>
 			<Int sr="arg5" val="3"/>
 			<Int sr="arg6" val="1"/>
 		</Action>
-		<Action sr="act5" ve="7">
+		<Action sr="act6" ve="7">
 			<code>547</code>
 			<label>longitude do local
 
@@ -4949,7 +5004,7 @@ longitude of place</label>
 			<Int sr="arg5" val="3"/>
 			<Int sr="arg6" val="1"/>
 		</Action>
-		<Action sr="act6" ve="7">
+		<Action sr="act7" ve="7">
 			<code>547</code>
 			<label>legenda do arquivo
 
@@ -4969,7 +5024,7 @@ choose not to add a caption to the location, a caption with the latitude and lon
 			<Int sr="arg5" val="3"/>
 			<Int sr="arg6" val="1"/>
 		</Action>
-		<Action sr="act7" ve="7">
+		<Action sr="act8" ve="7">
 			<code>130</code>
 			<Str sr="arg0" ve="3">#SEND_MESSAGES_AND_FILES v(1.0)</Str>
 			<Int sr="arg1">
@@ -4985,7 +5040,7 @@ choose not to add a caption to the location, a caption with the latitude and lon
 			<Int sr="arg8" val="0"/>
 			<Int sr="arg9" val="1"/>
 		</Action>
-		<Action sr="act8" ve="7">
+		<Action sr="act9" ve="7">
 			<code>37</code>
 			<ConditionList sr="if">
 				<Condition sr="c0" ve="3">
@@ -4995,37 +5050,10 @@ choose not to add a caption to the location, a caption with the latitude and lon
 				</Condition>
 			</ConditionList>
 		</Action>
-		<Action sr="act9" ve="7">
-			<code>548</code>
-			<se>false</se>
-			<Str sr="arg0" ve="3">Sucesso</Str>
-			<Int sr="arg1" val="0"/>
-			<Str sr="arg10" ve="3"/>
-			<Int sr="arg11" val="1"/>
-			<Int sr="arg12" val="0"/>
-			<Str sr="arg13" ve="3"/>
-			<Int sr="arg14" val="0"/>
-			<Str sr="arg15" ve="3"/>
-			<Int sr="arg2" val="0"/>
-			<Str sr="arg3" ve="3"/>
-			<Str sr="arg4" ve="3"/>
-			<Str sr="arg5" ve="3"/>
-			<Str sr="arg6" ve="3"/>
-			<Str sr="arg7" ve="3"/>
-			<Str sr="arg8" ve="3"/>
-			<Int sr="arg9" val="1"/>
-			<ConditionList sr="if">
-				<Condition sr="c0" ve="3">
-					<lhs>%caller1</lhs>
-					<op>2</op>
-					<rhs>ui</rhs>
-				</Condition>
-			</ConditionList>
-		</Action>
 	</Task>
 	<Task sr="task928">
 		<cdate>1742837467342</cdate>
-		<edate>1743664599113</edate>
+		<edate>1743743951502</edate>
 		<id>928</id>
 		<nme>(ID: DOOR IDENTIFIER) PROGRESSION VESION (VERSION COD) -Wuzapi ChatBoot - Presence Indication</nme>
 		<pri>100</pri>
@@ -5173,20 +5201,21 @@ writing, value ( typing )
 	</Task>
 	<Task sr="task929">
 		<cdate>1743391639738</cdate>
-		<edate>1743663215341</edate>
+		<edate>1743744031960</edate>
 		<id>929</id>
 		<nme>(ID: DOOR IDENTIFIER) PROGRESSION VESION (VERSION COD) -Wuzapi ChatBoot - Send Get Contacts Message</nme>
 		<pri>100</pri>
 		<Action sr="act0" ve="7">
 			<code>300</code>
-			<label>quantidade de contatos 
+			<label>retorna todos os seus contatos
 var %amount_contacts 
 
 variável com o json
 var %json_contacts
 
-amount of contacts
+returns all your contacts
 var %amount_contacts
+
 variable with json
 var %json_contacts</label>
 		</Action>
@@ -5202,9 +5231,6 @@ var %json_contacts</label>
 		</Action>
 		<Action sr="act2" ve="7">
 			<code>547</code>
-			<label>porta para qual será passado
-
-door to which it will be passed</label>
 			<Str sr="arg0" ve="3">%port</Str>
 			<Str sr="arg1" ve="3">DOOR IDENTIFIER</Str>
 			<Int sr="arg2" val="0"/>
@@ -5322,7 +5348,7 @@ The label of the button that was clicked&lt;/_array_net.dinglisch.android.tasker
 	</Task>
 	<Task sr="task930">
 		<cdate>1742837467342</cdate>
-		<edate>1743539867852</edate>
+		<edate>1743744027202</edate>
 		<id>930</id>
 		<nme>(ID: DOOR IDENTIFIER) PROGRESSION VESION (VERSION COD) -Wuzapi ChatBoot - Send Check WhatsApp Message</nme>
 		<pri>100</pri>
@@ -5472,7 +5498,7 @@ Enter the phone number you want to check if it is linked to WhatsApp ex:. 558122
 	</Task>
 	<Task sr="task931">
 		<cdate>1743391639738</cdate>
-		<edate>1743663185169</edate>
+		<edate>1743743198223</edate>
 		<id>931</id>
 		<nme>(ID: DOOR IDENTIFIER) PROGRESSION VESION (VERSION COD) -Wuzapi ChatBoot - Send React to Messages  Message</nme>
 		<pri>100</pri>
@@ -5501,54 +5527,6 @@ door to which it will be passed</label>
 			<Int sr="arg6" val="1"/>
 		</Action>
 		<Action sr="act10" ve="7">
-			<code>38</code>
-		</Action>
-		<Action sr="act2" ve="7">
-			<code>547</code>
-			<label>número do usuário a ser Sucesso a reação 
-ex:. 558122334455
-
-user number to send the reaction to
-ex:. 558122334455</label>
-			<Str sr="arg0" ve="3">%number</Str>
-			<Str sr="arg1" ve="3">558122334455</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<Int sr="arg6" val="1"/>
-		</Action>
-		<Action sr="act3" ve="7">
-			<code>547</code>
-			<label>ID da mensagem que a ser Sucesso a reação
-ex:. EEA9CB803EE5954D0F0ACA6193D00B5E
-
-ID of the message to be sent to the reaction
-ex:. EEA9CB803EE5954D0F0ACA6193D00B5E</label>
-			<Str sr="arg0" ve="3">%message_id</Str>
-			<Str sr="arg1" ve="3">D1F3BD572B5C2D97BAC0504E9C974CB5</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<Int sr="arg6" val="1"/>
-		</Action>
-		<Action sr="act4" ve="7">
-			<code>547</code>
-			<label>reação assim enviada 
-exe:. 😀
-
-reaction sent like this
-ex:. 😀</label>
-			<Str sr="arg0" ve="3">%reaction</Str>
-			<Str sr="arg1" ve="3">🤖</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<Int sr="arg6" val="1"/>
-		</Action>
-		<Action sr="act5" ve="7">
 			<code>130</code>
 			<Str sr="arg0" ve="3">#SEND_MESSAGES_AND_FILES v(1.0)</Str>
 			<Int sr="arg1">
@@ -5564,7 +5542,7 @@ ex:. 😀</label>
 			<Int sr="arg8" val="0"/>
 			<Int sr="arg9" val="1"/>
 		</Action>
-		<Action sr="act6" ve="7">
+		<Action sr="act11" ve="7">
 			<code>37</code>
 			<ConditionList sr="if">
 				<Condition sr="c0" ve="3">
@@ -5574,7 +5552,7 @@ ex:. 😀</label>
 				</Condition>
 			</ConditionList>
 		</Action>
-		<Action sr="act7" ve="7">
+		<Action sr="act12" ve="7">
 			<code>548</code>
 			<se>false</se>
 			<Str sr="arg0" ve="3">Sucesso</Str>
@@ -5601,10 +5579,10 @@ ex:. 😀</label>
 				</Condition>
 			</ConditionList>
 		</Action>
-		<Action sr="act8" ve="7">
+		<Action sr="act13" ve="7">
 			<code>43</code>
 		</Action>
-		<Action sr="act9" ve="7">
+		<Action sr="act14" ve="7">
 			<code>548</code>
 			<se>false</se>
 			<Str sr="arg0" ve="3">Processo Falhou</Str>
@@ -5631,10 +5609,100 @@ ex:. 😀</label>
 				</Condition>
 			</ConditionList>
 		</Action>
+		<Action sr="act15" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act16" ve="7">
+			<code>40</code>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>354</code>
+			<label>números destinatários, adicionar sempre cada número com uma quebra de linha se for para mais de um número
+
+recipient numbers, always add each number with a line break if it is for more than one number</label>
+			<Str sr="arg0" ve="3">%multiples</Str>
+			<Str sr="arg1" ve="3">558122334455
+558188776655</Str>
+			<Str sr="arg2" ve="3">
+</Str>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>354</code>
+			<label>IDS das mensagens, adicionar cada ID com uma quebra de linha se for para mais de um número
+
+Message IDs, add each ID with a line break if it is for more than one number</label>
+			<Str sr="arg0" ve="3">%multiples_id</Str>
+			<Str sr="arg1" ve="3">EEA9CB803EE5954D0F0ACA6193D00B5E
+EEA9CB803EE5954D0F0ACA6193D00B5E</Str>
+			<Str sr="arg2" ve="3">
+</Str>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%count_send</Str>
+			<Str sr="arg1" ve="3">0</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>39</code>
+			<Str sr="arg0" ve="3">%send</Str>
+			<Str sr="arg1" ve="3">1:%multiples(#)</Str>
+			<Int sr="arg2" val="1"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>888</code>
+			<Str sr="arg0" ve="3">%count_send</Str>
+			<Int sr="arg1" val="1"/>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%number</Str>
+			<Str sr="arg1" ve="3">%multiples(%count_send)</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>547</code>
+			<label>ID da mensagem que a ser Sucesso a reação
+ex:. EEA9CB803EE5954D0F0ACA6193D00B5E
+
+ID of the message to be sent to the reaction
+ex:. EEA9CB803EE5954D0F0ACA6193D00B5E</label>
+			<Str sr="arg0" ve="3">%message_id</Str>
+			<Str sr="arg1" ve="3">%multiples_id(%count_send)</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act9" ve="7">
+			<code>547</code>
+			<label>reação assim enviada 
+exe:. 😀
+
+reaction sent like this
+ex:. 😀</label>
+			<Str sr="arg0" ve="3">%reaction</Str>
+			<Str sr="arg1" ve="3">🤖</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
 	</Task>
 	<Task sr="task932">
 		<cdate>1742837467342</cdate>
-		<edate>1743482443414</edate>
+		<edate>1743743158403</edate>
 		<id>932</id>
 		<nme>(ID: DOOR IDENTIFIER) PROGRESSION VESION (VERSION COD) -Wuzapi ChatBoot - Send Audio Message</nme>
 		<pri>100</pri>
@@ -5663,108 +5731,6 @@ door to which it will be passed</label>
 			<Int sr="arg6" val="1"/>
 		</Action>
 		<Action sr="act10" ve="7">
-			<code>38</code>
-		</Action>
-		<Action sr="act2" ve="7">
-			<code>547</code>
-			<label>número do destinatário
-
-recipient number</label>
-			<Str sr="arg0" ve="3">%number</Str>
-			<Str sr="arg1" ve="3">558122334455</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<Int sr="arg6" val="1"/>
-		</Action>
-		<Action sr="act3" ve="7">
-			<code>547</code>
-			<label>"yes" para eliminar o arquivo .opus após o envio
-"no" para manter o arquivo após o envio
-
-"yes" to delete the .opus file after uploading
-"no" to keep the file after uploading</label>
-			<Str sr="arg0" ve="3">%auto_del</Str>
-			<Str sr="arg1" ve="3">yes</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<Int sr="arg6" val="1"/>
-		</Action>
-		<Action sr="act4" ve="7">
-			<code>547</code>
-			<label>caminho do áudio
-exe:. /storage/emulated/0/Download/áudio.mp3
-
-audio path 
-exe:. /storage/emulated/0/Download/audio.mp3</label>
-			<Str sr="arg0" ve="3">%path</Str>
-			<Str sr="arg1" ve="3">/storage/emulated/0/Music/Recordings/2025_03_28_16_05_39.mp3</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<Int sr="arg6" val="1"/>
-		</Action>
-		<Action sr="act5" ve="7">
-			<code>130</code>
-			<Str sr="arg0" ve="3">#SEND_MESSAGES_AND_FILES v(1.0)</Str>
-			<Int sr="arg1">
-				<var>%priority+10</var>
-			</Int>
-			<Int sr="arg10" val="1"/>
-			<Str sr="arg2" ve="3"/>
-			<Str sr="arg3" ve="3"/>
-			<Str sr="arg4" ve="3"/>
-			<Int sr="arg5" val="0"/>
-			<Int sr="arg6" val="1"/>
-			<Str sr="arg7" ve="3">%type/%port/%number/%path/%auto_del</Str>
-			<Int sr="arg8" val="0"/>
-			<Int sr="arg9" val="1"/>
-		</Action>
-		<Action sr="act6" ve="7">
-			<code>37</code>
-			<ConditionList sr="if">
-				<Condition sr="c0" ve="3">
-					<lhs>%result</lhs>
-					<op>2</op>
-					<rhs>success</rhs>
-				</Condition>
-			</ConditionList>
-		</Action>
-		<Action sr="act7" ve="7">
-			<code>548</code>
-			<se>false</se>
-			<Str sr="arg0" ve="3">Sucesso</Str>
-			<Int sr="arg1" val="0"/>
-			<Str sr="arg10" ve="3"/>
-			<Int sr="arg11" val="1"/>
-			<Int sr="arg12" val="0"/>
-			<Str sr="arg13" ve="3"/>
-			<Int sr="arg14" val="0"/>
-			<Str sr="arg15" ve="3"/>
-			<Int sr="arg2" val="0"/>
-			<Str sr="arg3" ve="3"/>
-			<Str sr="arg4" ve="3"/>
-			<Str sr="arg5" ve="3"/>
-			<Str sr="arg6" ve="3"/>
-			<Str sr="arg7" ve="3"/>
-			<Str sr="arg8" ve="3"/>
-			<Int sr="arg9" val="1"/>
-			<ConditionList sr="if">
-				<Condition sr="c0" ve="3">
-					<lhs>%caller1</lhs>
-					<op>2</op>
-					<rhs>ui</rhs>
-				</Condition>
-			</ConditionList>
-		</Action>
-		<Action sr="act8" ve="7">
-			<code>43</code>
-		</Action>
-		<Action sr="act9" ve="7">
 			<code>548</code>
 			<se>false</se>
 			<Str sr="arg0" ve="3">Processo Falhou</Str>
@@ -5791,10 +5757,119 @@ exe:. /storage/emulated/0/Download/audio.mp3</label>
 				</Condition>
 			</ConditionList>
 		</Action>
+		<Action sr="act11" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act12" ve="7">
+			<code>40</code>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>547</code>
+			<label>"yes" para eliminar o arquivo .opus após o envio
+"no" para manter o arquivo após o envio
+
+"yes" to delete the .opus file after uploading
+"no" to keep the file after uploading</label>
+			<Str sr="arg0" ve="3">%auto_del</Str>
+			<Str sr="arg1" ve="3">yes</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>354</code>
+			<label>números destinatários, adicionar sempre cada número com uma quebra de linha se for para mais de um número
+
+recipient numbers, always add each number with a line break if it is for more than one number</label>
+			<Str sr="arg0" ve="3">%multiples</Str>
+			<Str sr="arg1" ve="3">558122334455
+558188776655</Str>
+			<Str sr="arg2" ve="3">
+</Str>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>39</code>
+			<Str sr="arg0" ve="3">%number</Str>
+			<Str sr="arg1" ve="3">%multiples()</Str>
+			<Int sr="arg2" val="1"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>547</code>
+			<label>caminho do áudio
+exe:. /storage/emulated/0/Download/áudio.mp3
+
+audio path 
+exe:. /storage/emulated/0/Download/audio.mp3</label>
+			<Str sr="arg0" ve="3">%path</Str>
+			<Str sr="arg1" ve="3">/storage/emulated/0/Music/Recordings/2025_03_28_16_05_39.mp3</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">#SEND_MESSAGES_AND_FILES v(1.0)</Str>
+			<Int sr="arg1">
+				<var>%priority+10</var>
+			</Int>
+			<Int sr="arg10" val="1"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="1"/>
+			<Str sr="arg7" ve="3">%type/%port/%number/%path/%auto_del</Str>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>37</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%result</lhs>
+					<op>2</op>
+					<rhs>success</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>548</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">Sucesso</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg10" ve="3"/>
+			<Int sr="arg11" val="1"/>
+			<Int sr="arg12" val="0"/>
+			<Str sr="arg13" ve="3"/>
+			<Int sr="arg14" val="0"/>
+			<Str sr="arg15" ve="3"/>
+			<Int sr="arg2" val="0"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Int sr="arg9" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%caller1</lhs>
+					<op>2</op>
+					<rhs>ui</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act9" ve="7">
+			<code>43</code>
+		</Action>
 	</Task>
 	<Task sr="task933">
 		<cdate>1742837467342</cdate>
-		<edate>1743527993294</edate>
+		<edate>1743744025829</edate>
 		<id>933</id>
 		<nme>(ID: DOOR IDENTIFIER) PROGRESSION VESION (VERSION COD) -Wuzapi ChatBoot - Send Gets Avatar Message</nme>
 		<pri>100</pri>
@@ -5829,7 +5904,7 @@ ex:. 558122334455
 
 user number to get WhatsApp profile picture
 ex:. 558122334455</label>
-			<Str sr="arg0" ve="3">%phone</Str>
+			<Str sr="arg0" ve="3">%number</Str>
 			<Str sr="arg1" ve="3">558122334455</Str>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
@@ -5948,7 +6023,7 @@ ex:. 558122334455</label>
 	</Task>
 	<Task sr="task934">
 		<cdate>1742837467342</cdate>
-		<edate>1743527348888</edate>
+		<edate>1743743168238</edate>
 		<id>934</id>
 		<nme>(ID: DOOR IDENTIFIER) PROGRESSION VESION (VERSION COD) -Wuzapi ChatBoot - Send Video Message</nme>
 		<pri>100</pri>
@@ -5977,107 +6052,6 @@ door to which it will be passed</label>
 			<Int sr="arg6" val="1"/>
 		</Action>
 		<Action sr="act10" ve="7">
-			<code>38</code>
-		</Action>
-		<Action sr="act2" ve="7">
-			<code>547</code>
-			<label>número do destinatário
-
-recipient number</label>
-			<Str sr="arg0" ve="3">%number</Str>
-			<Str sr="arg1" ve="3">558122334455</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<Int sr="arg6" val="1"/>
-		</Action>
-		<Action sr="act3" ve="7">
-			<code>547</code>
-			<label>caminho do arquivo
-O vídeo deve estar em mp4 ou 3gpp
-o vídeo deve ter no máximo 49 MB
-
-file path
-The video must be in mp4 or 3gpp The video must be a maximum of 49 MB</label>
-			<Str sr="arg0" ve="3">%path</Str>
-			<Str sr="arg1" ve="3">/storage/emulated/0/Download/Video MP4_Mountain - testfile.org.mp4</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<Int sr="arg6" val="1"/>
-		</Action>
-		<Action sr="act4" ve="7">
-			<code>547</code>
-			<label>legenda do vídeo
-
-video caption</label>
-			<Str sr="arg0" ve="3">%caption</Str>
-			<Str sr="arg1" ve="3">Olá! Este vídeo foi Sucesso do Tasker !!!</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<Int sr="arg6" val="1"/>
-		</Action>
-		<Action sr="act5" ve="7">
-			<code>130</code>
-			<Str sr="arg0" ve="3">#SEND_MESSAGES_AND_FILES v(1.0)</Str>
-			<Int sr="arg1">
-				<var>%priority+10</var>
-			</Int>
-			<Int sr="arg10" val="1"/>
-			<Str sr="arg2" ve="3"/>
-			<Str sr="arg3" ve="3"/>
-			<Str sr="arg4" ve="3">%result</Str>
-			<Int sr="arg5" val="0"/>
-			<Int sr="arg6" val="1"/>
-			<Str sr="arg7" ve="3">%type/%port/%number/%path/%caption</Str>
-			<Int sr="arg8" val="0"/>
-			<Int sr="arg9" val="1"/>
-		</Action>
-		<Action sr="act6" ve="7">
-			<code>37</code>
-			<ConditionList sr="if">
-				<Condition sr="c0" ve="3">
-					<lhs>%result</lhs>
-					<op>2</op>
-					<rhs>success</rhs>
-				</Condition>
-			</ConditionList>
-		</Action>
-		<Action sr="act7" ve="7">
-			<code>548</code>
-			<se>false</se>
-			<Str sr="arg0" ve="3">Sucesso</Str>
-			<Int sr="arg1" val="0"/>
-			<Str sr="arg10" ve="3"/>
-			<Int sr="arg11" val="1"/>
-			<Int sr="arg12" val="0"/>
-			<Str sr="arg13" ve="3"/>
-			<Int sr="arg14" val="0"/>
-			<Str sr="arg15" ve="3"/>
-			<Int sr="arg2" val="0"/>
-			<Str sr="arg3" ve="3"/>
-			<Str sr="arg4" ve="3"/>
-			<Str sr="arg5" ve="3"/>
-			<Str sr="arg6" ve="3"/>
-			<Str sr="arg7" ve="3"/>
-			<Str sr="arg8" ve="3"/>
-			<Int sr="arg9" val="1"/>
-			<ConditionList sr="if">
-				<Condition sr="c0" ve="3">
-					<lhs>%caller1</lhs>
-					<op>2</op>
-					<rhs>ui</rhs>
-				</Condition>
-			</ConditionList>
-		</Action>
-		<Action sr="act8" ve="7">
-			<code>43</code>
-		</Action>
-		<Action sr="act9" ve="7">
 			<code>548</code>
 			<se>false</se>
 			<Str sr="arg0" ve="3">Processo Falhou</Str>
@@ -6104,10 +6078,118 @@ video caption</label>
 				</Condition>
 			</ConditionList>
 		</Action>
+		<Action sr="act11" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act12" ve="7">
+			<code>40</code>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>354</code>
+			<label>números destinatários, adicionar sempre cada número com uma quebra de linha se for para mais de um número
+
+recipient numbers, always add each number with a line break if it is for more than one number</label>
+			<Str sr="arg0" ve="3">%multiples</Str>
+			<Str sr="arg1" ve="3">558122334455
+558188776655</Str>
+			<Str sr="arg2" ve="3">
+</Str>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>39</code>
+			<Str sr="arg0" ve="3">%number</Str>
+			<Str sr="arg1" ve="3">%multiples()</Str>
+			<Int sr="arg2" val="1"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>547</code>
+			<label>caminho do arquivo
+O vídeo deve estar em mp4 ou 3gpp
+o vídeo deve ter no máximo 49 MB
+
+file path
+The video must be in mp4 or 3gpp The video must be a maximum of 49 MB</label>
+			<Str sr="arg0" ve="3">%path</Str>
+			<Str sr="arg1" ve="3">/storage/emulated/0/Download/Video MP4_Mountain - testfile.org.mp4</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>547</code>
+			<label>legenda do vídeo
+
+video caption</label>
+			<Str sr="arg0" ve="3">%caption</Str>
+			<Str sr="arg1" ve="3">Olá! Este vídeo foi Sucesso do Tasker !!!</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">#SEND_MESSAGES_AND_FILES v(1.0)</Str>
+			<Int sr="arg1">
+				<var>%priority+10</var>
+			</Int>
+			<Int sr="arg10" val="1"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3">%result</Str>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="1"/>
+			<Str sr="arg7" ve="3">%type/%port/%number/%path/%caption</Str>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>37</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%result</lhs>
+					<op>2</op>
+					<rhs>success</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>548</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">Sucesso</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg10" ve="3"/>
+			<Int sr="arg11" val="1"/>
+			<Int sr="arg12" val="0"/>
+			<Str sr="arg13" ve="3"/>
+			<Int sr="arg14" val="0"/>
+			<Str sr="arg15" ve="3"/>
+			<Int sr="arg2" val="0"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Int sr="arg9" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%caller1</lhs>
+					<op>2</op>
+					<rhs>ui</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act9" ve="7">
+			<code>43</code>
+		</Action>
 	</Task>
 	<Task sr="task935">
 		<cdate>1742837467342</cdate>
-		<edate>1743660117313</edate>
+		<edate>1743744030424</edate>
 		<id>935</id>
 		<nme>(ID: DOOR IDENTIFIER) PROGRESSION VESION (VERSION COD) -Wuzapi ChatBoot - Send Contact Message</nme>
 		<pri>100</pri>
@@ -6136,6 +6218,16 @@ door to which it will be passed</label>
 			<Int sr="arg6" val="1"/>
 		</Action>
 		<Action sr="act10" ve="7">
+			<code>37</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%result</lhs>
+					<op>2</op>
+					<rhs>success</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act11" ve="7">
 			<code>548</code>
 			<se>false</se>
 			<Str sr="arg0" ve="3">Sucesso</Str>
@@ -6162,10 +6254,10 @@ door to which it will be passed</label>
 				</Condition>
 			</ConditionList>
 		</Action>
-		<Action sr="act11" ve="7">
+		<Action sr="act12" ve="7">
 			<code>43</code>
 		</Action>
-		<Action sr="act12" ve="7">
+		<Action sr="act13" ve="7">
 			<code>548</code>
 			<se>false</se>
 			<Str sr="arg0" ve="3">Processo Falhou</Str>
@@ -6192,23 +6284,30 @@ door to which it will be passed</label>
 				</Condition>
 			</ConditionList>
 		</Action>
-		<Action sr="act13" ve="7">
+		<Action sr="act14" ve="7">
 			<code>38</code>
 		</Action>
+		<Action sr="act15" ve="7">
+			<code>40</code>
+		</Action>
 		<Action sr="act2" ve="7">
-			<code>547</code>
-			<label>número do destinatário
+			<code>354</code>
+			<label>números destinatários, adicionar sempre cada número com uma quebra de linha se for para mais de um número
 
-recipient number</label>
-			<Str sr="arg0" ve="3">%number</Str>
-			<Str sr="arg1" ve="3">558122334455</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<Int sr="arg6" val="1"/>
+recipient numbers, always add each number with a line break if it is for more than one number</label>
+			<Str sr="arg0" ve="3">%multiples</Str>
+			<Str sr="arg1" ve="3">558122334455
+558188776655</Str>
+			<Str sr="arg2" ve="3">
+</Str>
 		</Action>
 		<Action sr="act3" ve="7">
+			<code>39</code>
+			<Str sr="arg0" ve="3">%number</Str>
+			<Str sr="arg1" ve="3">%multiples()</Str>
+			<Int sr="arg2" val="1"/>
+		</Action>
+		<Action sr="act4" ve="7">
 			<code>547</code>
 			<label>nome do contato a ser criado
 
@@ -6221,7 +6320,7 @@ name of the contact to be created</label>
 			<Int sr="arg5" val="3"/>
 			<Int sr="arg6" val="1"/>
 		</Action>
-		<Action sr="act4" ve="7">
+		<Action sr="act5" ve="7">
 			<code>547</code>
 			<label>código do país
 
@@ -6234,7 +6333,7 @@ country code</label>
 			<Int sr="arg5" val="3"/>
 			<Int sr="arg6" val="1"/>
 		</Action>
-		<Action sr="act5" ve="7">
+		<Action sr="act6" ve="7">
 			<code>547</code>
 			<label>número do contato com DDD
 
@@ -6247,7 +6346,7 @@ contact number with area code</label>
 			<Int sr="arg5" val="3"/>
 			<Int sr="arg6" val="1"/>
 		</Action>
-		<Action sr="act6" ve="7">
+		<Action sr="act7" ve="7">
 			<code>547</code>
 			<label>"yes" para envio de contato com o link do WhatsApp 
 ex:. https://wa.me/+55 99 98877-6655
@@ -6264,7 +6363,7 @@ ex:. https://wa.me/+55 99 98877-6655
 			<Int sr="arg5" val="3"/>
 			<Int sr="arg6" val="1"/>
 		</Action>
-		<Action sr="act7" ve="7">
+		<Action sr="act8" ve="7">
 			<code>547</code>
 			<label>Deixe desativado se não desejar adicionar uma mensagem ao link
 ex:. https://wa.me/55998877-6655?text=Olá! Esta mensagem foi enviada do Tasker !!!
@@ -6279,7 +6378,7 @@ Leave disabled if you don't want to add a message to the link
 			<Int sr="arg5" val="3"/>
 			<Int sr="arg6" val="1"/>
 		</Action>
-		<Action sr="act8" ve="7">
+		<Action sr="act9" ve="7">
 			<code>130</code>
 			<Str sr="arg0" ve="3">#SEND_MESSAGES_AND_FILES v(1.0)</Str>
 			<Int sr="arg1">
@@ -6295,20 +6394,10 @@ Leave disabled if you don't want to add a message to the link
 			<Int sr="arg8" val="0"/>
 			<Int sr="arg9" val="1"/>
 		</Action>
-		<Action sr="act9" ve="7">
-			<code>37</code>
-			<ConditionList sr="if">
-				<Condition sr="c0" ve="3">
-					<lhs>%result</lhs>
-					<op>2</op>
-					<rhs>success</rhs>
-				</Condition>
-			</ConditionList>
-		</Action>
 	</Task>
 	<Task sr="task936">
 		<cdate>1743391639738</cdate>
-		<edate>1743482547286</edate>
+		<edate>1743744024565</edate>
 		<id>936</id>
 		<nme>(ID: DOOR IDENTIFIER) PROGRESSION VESION (VERSION COD) -Wuzapi ChatBoot - Send List Subscribed Groups  Message</nme>
 		<pri>100</pri>
